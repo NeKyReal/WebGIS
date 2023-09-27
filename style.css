@@ -1,0 +1,128 @@
+html {
+	font-family: sans-serif;
+}
+			
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+		
+body {
+	margin: 0;
+	line-height: 1.5;
+	min-height: 100vh;
+	background-color: gray;
+}
+		
+header {
+	position: sticky;
+	top: 0;
+	background: black;
+	height: 100px;
+}
+
+footer {
+	font-size: 10px;
+	background: black;
+	height: 80px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;  
+	text-align: center; 
+}
+		
+h1 {
+	text-align: center;
+	color: white;
+	line-height: 100px;
+	margin: 0;
+}
+
+.main {
+	padding: 10px;
+	margin: 10px;
+	background: white;
+	border-radius: 16px; 
+	box-shadow: 0 30px 30px -25px black; 
+	
+	.title {
+		margin: 15px;
+	}
+}
+
+div {
+	padding: 10px;
+	margin: 10px;
+	background: white;
+	/* flex: 200px; */
+	flex: calc(100% / 3 - 2rem)
+}
+		
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2.5rem;
+	width: calc(100% / 3 - 2rem)
+	/* width: 90%;
+	max-width: 1000px; */
+	margin: 10vh auto;
+}
+
+.card {
+	border-radius: 16px;
+	box-shadow: 0 30px 30px -25px black;
+	/* max-width: 300px; */
+}
+
+.information {
+	background-color: white;
+	padding: 1.5rem;
+
+	.tag {
+		display: inline-block;
+		background-color: gray;
+		color: black;
+		font-weight: 600;
+		font-size: 0.875rem;
+		padding: 0.5em 0.75em;
+		line-height: 1;
+		border-radius: 6px;
+	}
+
+	.title {
+		font-size: 1.5rem;
+		color: black;
+		line-height: 1.25;
+	}
+
+	.info {
+		color: black;
+	}
+
+	.button {
+		font: inherit;
+		line-height: 1;
+		background-color: white;
+		border: 2px solid black;
+		color: black;
+		padding: 0.5em 1em;
+		border-radius: 6px;
+		font-weight: 500;
+		display: inline-flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+		&:hover, &:focus {
+			background-color: black;
+			color: white;
+		}
+	}
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
