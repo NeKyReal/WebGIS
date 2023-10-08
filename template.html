@@ -4,22 +4,30 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Я пытаюсь стать дезигнером</title>
+	<title>Название вкладки</title>
 </head>
-  
+
 <body>
 	<header>
-		<h1>крутоеназвание.txt</h1>
+		<a href="#" class="logo">logo.icon</a>
+		<ul class="navigation">
+			<li class="button"><a href="#" class="link">Главная</a></li>
+			<li class="button"><a href="#" class="link">События</a></li>
+			<li class="button"><a href="#" class="link">Карта</a></li>
+			<li class="button"><a href="#" class="link">О нас</a></li>
+		</ul>
 	</header>
-	
-	 <article class="main">
-		<h2 class="title">Главный блок</h2>
-        <p class="title">Тут будет написано что-то важное и небольшой блок карты чтобы точки (дальше не думал).</p>
-	</article>
-	
-    <section>
-		<div class="information [ card ]">
+
+    <section class="main-content">
+		<article class="main">
+			<h2 class="title">Главный блок</h2>
+	        <p class="title">Тут будет написано что-то важное и небольшой блок карты чтобы точки (дальше не думал).</p>
+		</article>
+
+		<div class="card">
 			<span class="tag">Игры</span>
+			<span class="tag">Сообщество</span>
+			<img src="materials/image.jpg" alt="" class="image-radius"/>
 			<h2 class="title">Событие про игры</h2>
 			<p class="info">Событие, связанное с играми. Обязательно посетите!</p>
 			<button class="button">
@@ -27,8 +35,10 @@
 			</button>
 		</div>
 
-		<div class="information [ card ]">
+		<div class="card">
 			<span class="tag">Аниме</span>
+			<span class="tag">Концерт</span>
+			<img src="materials/image.jpg" alt="" class="image-radius"/>
 			<h2 class="title">Событие про аниме</h2>
 			<p class="info">Событие, связанное с аниме. Не посещайте, пожалуйста!</p>
 			<button class="button">
@@ -36,8 +46,10 @@
 			</button>
 		</div>
 
-		<div class="information [ card ]">
+		<div class="card">
 			<span class="tag">Сериалы</span>
+			<span class="tag">Звезды</span>
+			<img src="materials/image.jpg" alt="" class="image-radius"/>
 			<h2 class="title">Событие про сериалы</h2>
 			<p class="info">Событие, связанное с играми. Обязательно посетите!</p>
 			<button class="button">
@@ -45,8 +57,10 @@
 			</button>
 		</div>
 
-		<div class="information [ card ]">
+		<div class="card">
 			<span class="tag">Книги</span>
+			<span class="tag">Сообщество</span>
+			<img src="materials/image.jpg" alt="" class="image-radius"/>
 			<h2 class="title">Книжное событие</h2>
 			<p class="info">Событие, связанное с нигами. Обязательно посетите!</p>
 			<button class="button">
@@ -54,27 +68,29 @@
 			</button>
 		</div>
 
-		<div class="information [ card ]">
+		<div class="card">
 			<span class="tag">Игры</span>
+			<span class="tag">Концерт</span>
+			<img src="materials/image.jpg" alt="" class="image-radius"/>
 			<h2 class="title">Еще одно игровое событие</h2>
 			<p class="info">Еще одно обытие, связанное с играми. Да, идеи кончились</p>
 			<button class="button">
 				<span>Подробнее</span>
 			</button>
 		</div>
-		
-		<div class="information [ card ]">
+
+		<div class="card">
 			<span class="tag">Игры</span>
+			<span class="tag">Сообщество</span>
+			<img src="materials/image.jpg" alt="" class="image-radius"/>
 			<h2 class="title">Точно последнее игровое событие</h2>
 			<p class="info">Еще одно обытие, связанное с играми. Да, идеи кончились</p>
 			<button class="button">
 				<span>Подробнее</span>
 			</button>
 		</div>
+
 	</section>
-	
-	<footer>
-		<h1>by Кириллиус Максимус © 2023 </h1>
-	</footer>
 </body>
+
 </html>
