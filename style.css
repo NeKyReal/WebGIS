@@ -1,35 +1,74 @@
+/* убрать стилизацию тегов */
+/* добавить комменты для себя */
+
 html {
 	font-family: sans-serif;
 }
-			
+
 *, *:after, *:before {
 	box-sizing: border-box;
 }
-		
+
+/* header */
+header {
+	width: 100%;
+	position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10%;
+    background-color: black;
+    justify-content: space-between;
+}
+
+/* надо сделать нормальную стилизацию у меню */
+.logo {
+	text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+
+	.button {
+	    margin-left: 5px;
+	    margin-right: 5px;
+		display: block;
+		padding: 10px 20px;
+
+		.link {
+			text-decoration: none;
+			color: white;
+		}
+
+		.link:hover {
+			color: gray;
+		}
+	}
+}
+
+/* невероятный костыль */
+@media (max-width: 700px) {
+	/* удалить это из существования */
+	.navigation {
+		height: 40px;
+
+		.button {
+			display: none;
+		}
+	}
+}
+
+/* body */
 body {
 	margin: 0;
 	line-height: 1.5;
 	min-height: 100vh;
 	background-color: gray;
 }
-		
-header {
-	position: sticky;
-	top: 0;
-	background: black;
-	height: 100px;
-}
 
-footer {
-	font-size: 10px;
-	background: black;
-	height: 80px;
-	position: fixed;
-	bottom: 0;
-	width: 100%;  
-	text-align: center; 
-}
-		
 h1 {
 	text-align: center;
 	color: white;
@@ -38,47 +77,27 @@ h1 {
 }
 
 .main {
+	width: 100%;
 	padding: 10px;
 	margin: 10px;
 	background: white;
-	border-radius: 16px; 
-	box-shadow: 0 30px 30px -25px black; 
-	
+	margin-top: 90px;
+	border-radius: 16px;
+	box-shadow: 0 30px 30px -25px black;
+
 	.title {
 		margin: 15px;
 	}
 }
 
-div {
-	padding: 10px;
-	margin: 10px;
-	background: white;
-	/* flex: 200px; */
-	flex: calc(100% / 3 - 2rem)
-}
-		
-.cards {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 2.5rem;
-	width: calc(100% / 3 - 2rem)
-	/* width: 90%;
-	max-width: 1000px; */
-	margin: 10vh auto;
-}
-
+/* cardы */
 .card {
+	margin: 10px;
 	border-radius: 16px;
 	box-shadow: 0 30px 30px -25px black;
-	/* max-width: 300px; */
-}
-
-.information {
 	background-color: white;
 	padding: 1.5rem;
+	flex: calc(100% / 4 - 2rem);
 
 	.tag {
 		display: inline-block;
@@ -89,6 +108,13 @@ div {
 		padding: 0.5em 0.75em;
 		line-height: 1;
 		border-radius: 6px;
+		margin-bottom: 4px;
+	}
+
+	.image-radius {
+		width: 100%;
+		border-radius: 16px;
+		margin-top: 12px;
 	}
 
 	.title {
@@ -114,6 +140,7 @@ div {
 		align-items: center;
 		justify-content: space-between;
 		gap: 0.5rem;
+
 		&:hover, &:focus {
 			background-color: black;
 			color: white;
@@ -121,8 +148,16 @@ div {
 	}
 }
 
-section {
+.main-content {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+}
+
+/* с этим разобраться получше */
+@media (min-width: 1400px) {
+	.main-content {
+		margin-left: 10rem;
+		margin-right: 10rem;
+	}
 }
